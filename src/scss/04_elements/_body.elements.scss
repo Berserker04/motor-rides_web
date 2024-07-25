@@ -1,0 +1,6 @@
+.body {
+  @include colorsThemeBody($colorsLight, "black");
+  &.dark {
+    @include colorsThemeBody($colorsDark, "white");
+  }
+}

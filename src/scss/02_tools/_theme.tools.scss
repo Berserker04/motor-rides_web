@@ -1,0 +1,25 @@
+@mixin colorsThemeBody($colorsMode, $color) {
+  background-color: map-get($colorsMode, "main");
+  color: map-get($colors, $color);
+}
+
+@mixin colorsThemeButton($colorsMode, $color) {
+  .btn {
+    background-color: map-get($colorsMode, "main");
+    color:  map-get($colors, $color);
+
+    &:hover {
+        background-color: map-get($colors, "tertiary");
+        color: map-get($colors, "white");
+      }
+  }
+
+  &.dark {
+    .btn {
+      &:hover {
+        background-color: map-get($colors, "black");
+        color: map-get($colors, "white");
+      }
+    }
+  }
+}

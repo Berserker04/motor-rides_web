@@ -1,0 +1,35 @@
+.product__card {
+  line-height: 1.1rem;
+
+  .carousel {
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    cursor: pointer !important;
+
+    &__button {
+      display: none;
+      background-color: #ffffff99;
+      border-radius: 50%;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  &:hover {
+    .carousel__button {
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  img {
+    border-radius: 10px;
+    height: 16rem;
+  }
+
+  h5 {
+    margin-bottom: 0.3rem;
+  }
+}

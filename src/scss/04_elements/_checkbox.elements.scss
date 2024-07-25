@@ -1,0 +1,25 @@
+
+
+.body {
+    .checkbox{
+        // background-color: red;
+        width: fit-content;
+        padding: 0.1rem 0.3rem;
+        input{
+            margin-right: 0.5rem;
+        }
+    }
+  
+    // @include colorsThemeButton($colorsDark, "white");
+    &.dark {
+    //   @include colorsThemeButton($colorsLight, "black");
+  
+    //   .input {
+    //     &-tertiary {
+    //       background-color: map-get($colors, "tertiary");
+    //       color: map-get($colors, "white");
+    //     }
+    //   }
+    }
+  }
+  

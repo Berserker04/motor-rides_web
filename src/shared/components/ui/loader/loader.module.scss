@@ -1,0 +1,18 @@
+@import "@/scss/main.scss";
+
+.loaderFull__container {
+  display: grid;
+  place-items: center;
+  background-color: map-get($colors, "primary");
+  height: 100vh;
+
+  figure {
+    background-color: map-get($colors, "white");
+    padding: 2rem;
+    border-radius: 15px;
+
+    img {
+      width: 10rem;
+    }
+  }
+}

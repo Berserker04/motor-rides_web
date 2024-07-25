@@ -1,0 +1,48 @@
+$colors: (
+  "white": #ffffff,
+  "black": #000000,
+  "white-1": #f1f5f9,
+  "white-2": #f6f9fb,
+  "white-3": #e4e4e4,
+  "white-4": #e0e0e0,
+  "white-5": #cbcbcb,
+  "white-6": #b1b1b1,
+  "white-7": rgba(0, 0, 0, 0.26),
+  "black-1": #1f1f1f,
+  "black-2": #363636,
+  "black-3": #4d4d4d,
+
+  "primary": #111827,
+  "secondary": #1e293b,
+  "tertiary": #4f46e5,
+  "tertiary-1": #2920dd,
+);
+
+
+$colorsLight: (
+  "main": map-get($colors, "white"),
+  "primary": map-get($colors, "primary"),
+  "secondary": map-get($colors, "secondary"),
+  "tertiary": map-get($colors, "tertiary"),
+);
+
+$colorsDark: (
+  "main": map-get($colors, "primary"),
+  "primary": map-get($colors, "primary"),
+  "secondary": map-get($colors, "secondary"),
+  "tertiary": map-get($colors, "tertiary"),
+);
+
+$boxShadowLight: 0px 0px 63px -22px #fff;
+$boxShadowDark: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  -100px 20px 54px -100px rgba(10, 10, 10, 0.1);
+
+
+
+// :export {
+//   colors: $colors;
+//   colorsLight: $colorsLight;
+//   colorsDark: $colorsDark;
+//   boxShadowLight: $boxShadowLight;
+//   boxShadowDark: $boxShadowDark;
+// }

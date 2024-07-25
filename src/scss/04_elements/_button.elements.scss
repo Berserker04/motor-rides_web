@@ -1,0 +1,35 @@
+.body {
+  .btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: $boxShadowDark;
+    transition: all 0.2s;
+
+    &.btn-main {
+      background-color: map-get($colors, "white");
+      color: map-get($colors, "black");
+      &:hover {
+        color: map-get($colors, "black");
+        background-color: map-get($colors, "white-4");
+      }
+    }
+    &.btn-tertiary {
+      background-color: map-get($colors, "tertiary");
+      &:hover {
+        background-color: map-get($colors, "tertiary-1");
+      }
+    }
+  }
+
+  @include colorsThemeButton($colorsDark, "white");
+  &.dark {
+    @include colorsThemeButton($colorsLight, "black");
+
+    .btn {
+      &-tertiary {
+        background-color: map-get($colors, "tertiary");
+        color: map-get($colors, "white");
+      }
+    }
+  }
+}
