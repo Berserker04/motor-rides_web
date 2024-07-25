@@ -2,7 +2,7 @@ import { FETCH_API } from "@/api/ApiConfig";
 import { getFilterText } from "@/shared/helpers/getFilterText";
 import { sendToastFromResponse } from "@/shared/helpers/sendToast";
 
-const URL = "/touristSeasons";
+const URL = "/categories";
 
 export interface ITouristSeasonResponse {
   touristSeasons: ITouristSeasonDto[];
@@ -31,7 +31,7 @@ export const getTouristSeasonAllService = async (
   return {
     message: res.message,
     status: res.status,
-    touristSeasons: res.data.touristSeasons,
+    touristSeasons: res.data.categories,
     paginate: res.data.paginate,
   };
 };

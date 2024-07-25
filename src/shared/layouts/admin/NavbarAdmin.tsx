@@ -97,15 +97,15 @@ const NavbarAdmin = ({
             <ul className="mt-2 space-y-1 px-4">
               <li>
                 <Link
-                  href="/dashboard/servicios/paquetes"
-                  className={classLink("/dashboard/servicios/paquetes")}
+                  href="/dashboard/servicios/productos"
+                  className={classLink("/dashboard/servicios/productos")}
                   onClick={onClickHandle}
                 >
-                  Todos
+                  Productos
                 </Link>
               </li>
 
-              <li>
+              {/* <li>
                 <Link
                   href="/dashboard/servicios/hoteles"
                   className={classLink("/dashboard/servicios/hoteles")}
@@ -178,7 +178,7 @@ const NavbarAdmin = ({
                 >
                   Actividades
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </details>
         </li>
@@ -205,11 +205,11 @@ const NavbarAdmin = ({
             <ul className="mt-2 space-y-1 px-4">
               <li>
                 <Link
-                  href="/dashboard/configuraciones/servicios"
-                  className={classLink("/dashboard/configuraciones/servicios")}
+                  href="/dashboard/configuraciones/subcategorias"
+                  className={classLink("/dashboard/configuraciones/subcategorias")}
                   onClick={onClickHandle}
                 >
-                  Servicios
+                  Subcategoria
                 </Link>
               </li>
 
